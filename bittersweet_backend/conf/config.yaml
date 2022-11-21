@@ -1,0 +1,30 @@
+name: "bittersweet"
+mode: "dev"
+port: 8081
+start_time: "2022-07-01"
+machine_id: 1
+
+auth:
+  jwt_expire: 8760
+
+log:
+  level: "debug"
+  filename: "bittersweet.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+mysql:
+  host: x.xx.xx.xxx
+  port: 3306
+  user: "xxx"
+  password: "xxx"
+  dbname: "xxx"
+  max_open_conns: 200
+  max_idle_conns: 50
+redis:
+  host: x.xx.xx.xxx
+  port: 6379
+  password: "xxx"
+  db: 0
+  pool_size: 100
+
